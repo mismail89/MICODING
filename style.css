@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    width: 60%;
+    height: 50px;
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+}
+
+.logo div{
+    width: 150px;
+    height: 20px;
+    background-color: darksalmon;
+    box-shadow: 0px 0px 15px royalblue;
+    border: 1px;
+    border-radius: 5px;
+}
+.main{
+    position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   top: 20px;
+}
+.picture{
+    position: relative;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #b0c3d3 0%, #E0C3FC 100%);
+margin: 10px;
+box-shadow: 0px 0px 15px;
+}
+.picture img{
+    width: 140px;
+    border: 1px;
+    border-radius: 50%;
+}
+.picture div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+.picture div a{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(94,94,103,1) 12%, rgba(0,212,255,1) 100%);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: 1.5s ease-in;
+    border: 1px;
+    border-radius: 5px;
+}
+.picture div a:hover{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+transition: 1.5s ease-in;
+}
+p{
+    font-size: 22px;
+}
+
+.about{
+    position: relative;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 6, 34);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -13px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.about h1{
+    position: relative;
+    font-size: 40px;
+    bottom: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about p{
+    width: 400px;
+}
+.skills{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 40px;
+    bottom: 50px;
+}
+.data{
+    position: relative;
+    width: 30%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 15px;
+}
+.data p{
+    width: 300px;
+}
+hr{
+    
+    width: 100%;
+    position: relative;
+    height: 20px;
+    top: 20px;
+    background-color: rgb(109, 98, 132);
+}
+
+/* responsive web  */
+
+@media (max-width: 858px){
+    .logo{
+        width: 100%;
+    }
+    .logo h1{
+        font-size: 15px;
+    }
+    .logo .line{
+        width: 100px;
+        height: 10px;
+    }
+    .main{
+        width: 100%;
+        flex-direction: column;
+    }
+    .main div{
+        width: 100%;
+    }
+    .main div p{
+        width: 90%;
+    }
+    .main div h1{
+        font-size: 20px;
+    }
+    .skills {
+        height: 750px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .skills div{
+        width: 100%;
+        box-shadow: 0px 0px 7px black;
+        border: 3px solid rgb(142, 140, 140);
+    }
+    hr{
+        bottom: 10px;
+    }
+    .picture div a{
+        padding: 7px 15px;
+    }
+}
